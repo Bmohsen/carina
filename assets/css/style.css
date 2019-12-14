@@ -1,0 +1,151 @@
+body {
+    background-color: #211d3c;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00356B;
+
+}
+.text {
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: #fff;
+    max-width: 90%;
+    padding: 2em 3em;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 1px #3d3d3d;
+    font-family: 'Open Sans', sans-serif;
+}
+.text-mobile{
+    right: 30% !important;
+    max-width: 50% !important;
+}
+h1 {
+    font-size: 2.25em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+a,
+a:visited {
+    color: #e34234;
+    transition: 0.25s;
+}
+
+a:hover,
+a:focus {
+    color: #ba160c;
+}
+#mySidenav p{
+    color: azure;
+    padding: 5px;
+}
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+}
+.sidenav2 {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+  float: right;
+}
+@media screen and (max-width:800px){
+    .sidenav2{
+        visibility: hidden;
+    }
+}
+.sidenav a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ed2bff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#result > p{
+    background-color: #0000002e;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    animation: coloring 2s infinite;
+}
+@keyframes coloring {
+    from {color: red;}
+    to {color: rgb(45, 240, 54);}
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}

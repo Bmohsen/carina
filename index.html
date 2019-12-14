@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CARINA</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/iao-alert.css"/>
+    <script>
+        window.$ = window.jQuery = require('jquery');
+    </script>
+    <script>
+        require('popper.js')
+    </script>
+    <script>
+        require('bootstrap');
+    </script>
+</head>
+<body>
+<div id="particles-js"></div>
+<div class="container bg-primary">
+    <div id="mySidenav" class="sidenav">
+        <div id="result" class="text-center"></div>
+        <div id="listfiles"><a>select path first</a></div>
+    </div>
+</div>
+<div class="container bg-primary">
+    <div id="mySidenav2" class="sidenav2">
+        <div id="listfiles2"></div>
+    </div>
+</div>
+<div class="text">
+    <div class="container text-center">
+        <label for="filetype">1-enter files type(separate by comma):</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="filetype" placeholder="for example .mp4,.mkv">
+            <div class="input-group-append">
+                <button class="btn btn-success" id="gettype" type="button">apply</button>
+            </div>
+        </div>
+        <p>2-choose folder path:</p>
+        <button class="btn btn-outline-primary mb-3" id="choose">select</button>
+        <br>
+        <p>3-select what to do:</p>
+        <button type="button" class="btn btn-warning" id="mfolders">Make Folders</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+    </div>
+</div>
+<script src="assets/js/iao-alert.jquery.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/loader.js"></script>
+</body>
+</html>
